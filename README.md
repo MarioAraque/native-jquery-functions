@@ -10,6 +10,7 @@ Table of content
 
 * [Broser support](#support)
 * [Selectors](#selectors)
+* [DOM Manipulation](#dom)
 
 <a name="support"></a>
 Browser support
@@ -67,4 +68,35 @@ $('.my-class').get(0);
 
 /* Native equivalent */
 document.querySelector(".my-class");
+```
+
+<a name="dom"></a>
+DOM Manipulation
+================
+
+* Append HTML elements
+
+```
+/* jQuery */
+$('body').append("<div id='div-id'></div>");
+
+/* Native equivalent */
+document.body.innerHTML += "<div id='div-id'></div>";
+
+/* Much better native equivalent */
+var newDiv = document.createElement("div");
+newDiv.id = "div-id";
+document.body.appendChild(newDiv);
+```
+
+* Prepend HTML elements
+
+```
+/* jQuery */
+$('body').prepend("<div id='div-id'></div>");
+
+/* Native equivalent */
+var newDiv = document.createElement("div");
+newDiv.id = "div-id";
+document.body.insertBefore(newDiv, document.body.firstChild);
 ```
