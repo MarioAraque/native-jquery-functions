@@ -5,3 +5,6 @@ I think there are many developers who don’t realize that most of the jQuery me
 
 Here are a series of code samples showing some popular jQuery functions along with their native counterparts.
 
+Table of content
+
+* [Selectors](#selectors)
