@@ -15,7 +15,7 @@ Selectors
 1. Get all divs on a page. Valid for all html tags
 
 ```
-/* jQuery */
+/* jQuery */ 
 $('div');
 
 /* Native equivalent */
