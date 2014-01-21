@@ -1,4 +1,4 @@
-native-jquery-functions
+Native jQuery functions
 =======================
 
 Native equivalents of jQuery functions
