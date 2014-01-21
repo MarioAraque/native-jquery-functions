@@ -5,13 +5,14 @@ I think there are many developers who don’t realize that most of the jQuery me
 
 Here are a series of code samples showing some popular jQuery functions along with their native counterparts.
 
-Table of content
+Table of contents
 ================
 
 * [Broser support](#support)
 * [Selectors](#selectors)
 * [DOM Manipulation](#dom)
 * [Events](#events)
+* [Moving into DOM](#moving)
 
 <a name="support"></a>
 Browser support
@@ -185,4 +186,58 @@ $(someElement).click(function(){
 someElement.addEventListener("click", function() {
   console.log('click');
 }, false);
+```
+
+<a name="moving"></a>
+Moving into DOM
+===============
+
+* Get parent node
+
+```
+/* jQuery */
+$('.some-class').parent();
+
+/* Native equivalent */
+document.querySelector('.some-class').parentNode;
+```
+
+* Get the next node
+
+```
+/* jQuery */
+$('.some-class').next();
+
+/* Native equivalent */
+document.querySelector('.some-class').nextSibling;
+```
+
+* Get the previous node
+
+```
+/* jQuery */
+$('.some-class').prev();
+
+/* Native equivalent */
+document.querySelector('.some-class').previousSibling;
+```
+
+* Get the first child element
+
+```
+/* jQuery */
+$('.some-class').find('>:first-child');
+
+/* Native equivalent */
+document.querySelector('.some-class').children[0];
+```
+
+* Get the last child element
+
+```
+/* jQuery */
+$('.some-class').find('>:last-child');
+
+/* Native equivalent */
+document.querySelector('.some-class').lastElementChild;
 ```
