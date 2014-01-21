@@ -21,6 +21,7 @@ $('div');
 /* Native equivalent */
 document.getElementsByTagName('div');
 ```
+   
     
 2. Get elements by class
 
@@ -35,6 +36,7 @@ document.querySelectorAll('.class-name');
 document.getElementsByClassName('class-name');
 ```
 
+
 3. Get elements by CSS selector
 
 ```
@@ -44,6 +46,7 @@ $('.my-class .my-second-class');
 /* Native equivalent */
 document.querySelectorAll('.my-class .my-second-class');
 ```
+
 
 4. Get first element by CSS selector
 
