@@ -69,6 +69,15 @@ $('.my-class').get(0);
 /* Native equivalent */
 document.querySelector(".my-class");
 ```
+* Get id 
+
+```
+/* jQuery */
+$('#some-id')
+
+/* Native equivalent */
+document.getElementById('some-id');
+```
 
 <a name="dom"></a>
 DOM Manipulation
@@ -88,7 +97,6 @@ var newDiv = document.createElement("div");
 newDiv.id = "div-id";
 document.body.appendChild(newDiv);
 ```
-
 * Prepend HTML elements
 
 ```
@@ -100,7 +108,6 @@ var newDiv = document.createElement("div");
 newDiv.id = "div-id";
 document.body.insertBefore(newDiv, document.body.firstChild);
 ```
-
 * Manipulate CSS classes
 
 ```
@@ -128,7 +135,6 @@ $(element).reveceClass('new-class');
 element.classList.remove("new-class");
 
 ```
-
 * Manipulate CSS properties
 
 ```
