@@ -12,6 +12,7 @@ Table of contents
 * [Selectors](#selectors)
 * [DOM Manipulation](#dom)
 * [Events](#events)
+* [AJAX](#ajax)
 * [Moving into DOM](#moving)
 
 <a name="support"></a>
@@ -156,6 +157,46 @@ element.style.height = '250px';
 element.style.background = 'solid 1px red';
 ```
 
+* Clone element
+
+```
+/* jQuery */
+var elementCloned = $('.some-class').clone();
+
+/* Native equivalent */
+var elementCloned = document.querySelector('.some-class').cloneNode(truecli);
+```
+
+* Set Attributes to element
+
+```
+/* jQuery */
+$('.some-class').attr('data-attr', 'attr');
+
+/* Native equivalent */
+document.querySelector('.some-class').setAttribute('data-attr', 'attr');
+```
+
+* Remove Attributes to element
+
+```
+/* jQuery */
+$('.some-class').removeAttr('data-attr');
+
+/* Native equivalent */
+document.querySelector('.some-class').removeAttribute('data-attr');
+```
+
+* Get Attributes to element
+
+```
+/* jQuery */
+console.log($('.some-class').attr('title'));
+
+/* Native equivalent */
+console.log(document.querySelector('.some-class').getAttribute('title'));
+```
+
 <a name="events"></a>
 Events
 ======
@@ -178,7 +219,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 ```
 /* jQuery */
-$(someElement).click(function(){
+$(someElement).on('click', function(){
   console.log('click');
 });
 
@@ -186,6 +227,31 @@ $(someElement).click(function(){
 someElement.addEventListener("click", function() {
   console.log('click');
 }, false);
+```
+
+<a name="ajax"></a>
+AJAX
+====
+
+```
+/* jQuery */
+$.ajax({
+	url: "url",
+	type: "POST",
+	data: "a=1&b=2&c=3",
+	success: function(response) {
+		console.log(response);
+	}
+});
+
+/* Native equivalent */
+var r = new XMLHttpRequest(); 
+r.open("POST", "url", true);
+r.onreadystatechange = function () {
+	if (r.readyState != 4 || r.status != 200) return; 
+	console.log(r.responseText);
+};
+r.send("a=1&b=2&c=3");
 ```
 
 <a name="moving"></a>
