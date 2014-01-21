@@ -44,7 +44,7 @@ document.getElementsByTagName('div');
 ```
 * Get elements by class
 
-```
+```javascript
 /* jQuery */
 $('.class-name');
 
@@ -56,7 +56,7 @@ document.getElementsByClassName('class-name');
 ```
 * Get elements by CSS selector
 
-```
+```javascript
 /* jQuery */
 $('.my-class .my-second-class');
 
@@ -65,7 +65,7 @@ document.querySelectorAll('.my-class .my-second-class');
 ```
 * Get first element by CSS selector
 
-```
+```javascript
 /* jQuery */
 $('.my-class').get(0);
 
@@ -74,7 +74,7 @@ document.querySelector(".my-class");
 ```
 * Get element by id
 
-```
+```javascript
 /* jQuery */
 $('#some-id');
 
@@ -88,7 +88,7 @@ DOM Manipulation
 
 * Append HTML elements
 
-```
+```javascript
 /* jQuery */
 $('body').append("<div id='div-id'></div>");
 
@@ -102,7 +102,7 @@ document.body.appendChild(newDiv);
 ```
 * Prepend HTML elements
 
-```
+```javascript
 /* jQuery */
 $('body').prepend("<div id='div-id'></div>");
 
@@ -113,7 +113,7 @@ document.body.insertBefore(newDiv, document.body.firstChild);
 ```
 * Manipulate CSS classes
 
-```
+```javascript
 //Default variable
 var element = document.querySelector(".element");
 
@@ -140,7 +140,7 @@ element.classList.remove("new-class");
 ```
 * Manipulate CSS properties
 
-```
+```javascript
 //Default variable
 var element = document.querySelector(".element");
 
@@ -159,7 +159,7 @@ element.style.background = 'solid 1px red';
 
 * Clone element
 
-```
+```javascript
 /* jQuery */
 var elementCloned = $('.some-class').clone();
 
@@ -169,7 +169,7 @@ var elementCloned = document.querySelector('.some-class').cloneNode(truecli);
 
 * Set Attributes to element
 
-```
+```javascript
 /* jQuery */
 $('.some-class').attr('data-attr', 'attr');
 
@@ -179,7 +179,7 @@ document.querySelector('.some-class').setAttribute('data-attr', 'attr');
 
 * Remove Attributes to element
 
-```
+```javascript
 /* jQuery */
 $('.some-class').removeAttr('data-attr');
 
@@ -189,7 +189,7 @@ document.querySelector('.some-class').removeAttribute('data-attr');
 
 * Get Attributes to element
 
-```
+```javascript
 /* jQuery */
 console.log($('.some-class').attr('title'));
 
@@ -203,7 +203,7 @@ Events
 
 * Document Ready
 
-```
+```javascript
 /* jQuery */
 $(document).ready(function() {
   // Some stuff
@@ -217,7 +217,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 * Event listeners
 
-```
+```javascript
 /* jQuery */
 $(someElement).on('click', function(){
   console.log('click');
@@ -233,7 +233,7 @@ someElement.addEventListener("click", function() {
 AJAX
 ====
 
-```
+```javascript
 /* jQuery */
 $.ajax({
 	url: "url",
@@ -260,7 +260,7 @@ Moving into DOM
 
 * Get parent node
 
-```
+```javascript
 /* jQuery */
 $('.some-class').parent();
 
@@ -270,7 +270,7 @@ document.querySelector('.some-class').parentNode;
 
 * Get the next node
 
-```
+```javascript
 /* jQuery */
 $('.some-class').next();
 
@@ -280,7 +280,7 @@ document.querySelector('.some-class').nextSibling;
 
 * Get the previous node
 
-```
+```javascript
 /* jQuery */
 $('.some-class').prev();
 
@@ -290,7 +290,7 @@ document.querySelector('.some-class').previousSibling;
 
 * Get the first child element
 
-```
+```javascript
 /* jQuery */
 $('.some-class').find('>:first-child');
 
@@ -300,7 +300,7 @@ document.querySelector('.some-class').children[0];
 
 * Get the last child element
 
-```
+```javascript
 /* jQuery */
 $('.some-class').find('>:last-child');
 
