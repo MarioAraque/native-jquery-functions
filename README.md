@@ -8,3 +8,7 @@ Here are a series of code samples showing some popular jQuery functions along wi
 Table of content
 
 * [Selectors](#selectors)
+
+<a name="selectors"></a>
+Selectors
+=========
