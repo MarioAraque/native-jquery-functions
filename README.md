@@ -121,7 +121,6 @@ $(element).addClass('new-class');
 /* Native equivalent */
 element.classList.add("new-class");
 
-
 //Remove class
 $(element).reveceClass('new-class');
 
