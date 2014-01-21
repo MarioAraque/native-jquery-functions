@@ -11,6 +11,7 @@ Table of content
 * [Broser support](#support)
 * [Selectors](#selectors)
 * [DOM Manipulation](#dom)
+* [Events](#events)
 
 <a name="support"></a>
 Browser support
@@ -69,11 +70,11 @@ $('.my-class').get(0);
 /* Native equivalent */
 document.querySelector(".my-class");
 ```
-* Get id 
+* Get element by id
 
 ```
 /* jQuery */
-$('#some-id')
+$('#some-id');
 
 /* Native equivalent */
 document.getElementById('some-id');
@@ -152,4 +153,36 @@ $(element).css({
 element.style.width = '200px';
 element.style.height = '250px';
 element.style.background = 'solid 1px red';
+```
+
+<a name="events"></a>
+Events
+======
+
+* Document Ready
+
+```
+/* jQuery */
+$(document).ready(function() {
+  // Some stuff
+});
+
+/* Native equivalent */
+document.addEventListener("DOMContentLoaded", function() {
+  // Some stuff
+}, false);
+```
+
+* Event listeners
+
+```
+/* jQuery */
+$(someElement).click(function(){
+  console.log('click');
+});
+
+/* Native equivalent */
+someElement.addEventListener("click", function() {
+  console.log('click');
+}, false);
 ```
