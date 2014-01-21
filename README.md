@@ -107,5 +107,25 @@ document.body.insertBefore(newDiv, document.body.firstChild);
 //Default variable
 var element = document.querySelector(".element");
 
-** Add class **
+//Check if element has some class
+/* jQuery */
+if($(element).hasClass("new-class")){}
+
+/* Native equivalent */
+if(element.classList.contains("new-class"))
+
+//Add class
+/* jQuery */
+$(element).addClass('new-class');
+
+/* Native equivalent */
+element.classList.add("new-class");
+
+
+//Remove class
+$(element).reveceClass('new-class');
+
+/* Native equivalent */
+element.classList.remove("new-class");
+
 ```
