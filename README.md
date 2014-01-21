@@ -107,5 +107,5 @@ document.body.insertBefore(newDiv, document.body.firstChild);
 //Default variable
 var element = document.querySelector(".element");
 
-**Add class**
+** Add class **
 ```
