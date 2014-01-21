@@ -128,3 +128,22 @@ $(element).reveceClass('new-class');
 element.classList.remove("new-class");
 
 ```
+
+* Manipulate CSS properties
+
+```
+//Default variable
+var element = document.querySelector(".element");
+
+/* jQuery */
+$(element).css({
+  width: '200px',
+  height: '250px',
+  background: 'solid 1px red'
+});
+
+/* Native equivalent */
+element.style.width = '200px';
+element.style.height = '250px';
+element.style.background = 'solid 1px red';
+```
