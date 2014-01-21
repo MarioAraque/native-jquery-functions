@@ -6,8 +6,24 @@ I think there are many developers who don’t realize that most of the jQuery me
 Here are a series of code samples showing some popular jQuery functions along with their native counterparts.
 
 Table of content
+================
 
+* [Broser support](#support)
 * [Selectors](#selectors)
+
+<a name="support"></a>
+Browser support
+===============
+
+* IE9+
+* Firefox 3.5+
+* Firefox Mobile
+* Opera 9+
+* Opera Mobile
+* Safari 4+
+* Chrome 1+
+* iPhone and iPad iOS1+
+* Android 2.1+
 
 <a name="selectors"></a>
 Selectors
