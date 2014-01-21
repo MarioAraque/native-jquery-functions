@@ -100,3 +100,12 @@ var newDiv = document.createElement("div");
 newDiv.id = "div-id";
 document.body.insertBefore(newDiv, document.body.firstChild);
 ```
+
+* Manipulate CSS classes
+
+```
+//Default variable
+var element = document.querySelector(".element");
+
+**Add class**
+```
